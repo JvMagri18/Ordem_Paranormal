@@ -1,0 +1,398 @@
+*{
+    margin:0px auto;
+}
+
+body{
+    background-color: rgb(0, 0, 0)!important
+}
+
+
+header,footer{
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#h0{
+    margin-top: 100px;
+
+}
+
+#h0 h1{
+  color: antiquewhite;
+  font-family: "IBM Plex Sans Arabic";
+  font-size: 20px;
+  
+}
+
+#h0  p{
+    color:antiquewhite;
+    margin: 15px;
+    font-family: "IBM Plex Sans Arabic";
+    font-size: 15px;
+    
+  }
+
+div.esquerdo{
+flex:20%;
+
+}
+
+div.direito{
+flex:80%;
+display: flex;
+align-items: center;
+}
+
+
+div.esquerdo,div.direito{
+    margin:3px
+}
+
+
+div.menu button a, .menu, div.menu button {
+    height: 8vh
+
+
+}
+
+div.menu button {
+font-size: 2vh;
+}
+
+nav {
+    width: 75%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+nav a, nav button{
+    font-family:"IBM Plex Sans Arabic', sans-serif";
+    text-decoration: none;
+    color: rgb(81, 8, 250);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow:rgb(23, 1, 121) 5px 5px 5px;
+    transition: all 0.5s;
+}
+
+nav button{
+    background-color: transparent;
+
+}
+
+nav a:hover, nav button:hover{
+    background-color: #210938;
+    color: #fff;
+    opacity: 1.0;
+}
+
+
+
+
+
+footer,section{ 
+    width: 1100px;
+
+}
+
+div.direito h1{
+    font-family: 'Roboto', sans-serif;
+    font-size:4vw;
+    color: #7b08ff;
+    text-shadow:rgb(53, 1, 121) 5px 5px 5px;
+    
+
+}
+
+div.submenu{
+    display:none;
+    position: absolute;
+    box-shadow: #6b00f7d8;
+    z-index: 100;
+    background-color:transparent;
+    padding-left: 10px;
+    
+
+}
+
+button, div.submenu{
+    width:250px
+}
+
+div.submenu a{
+    font-family:"IBM Plex Sans Arabic', sans-serif";
+    text-decoration: none;
+    color: rgb(81, 8, 250);
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 4px 10 px;
+    
+}
+
+div.submenu a:hover {
+    color: #fff;
+}
+
+div.esquerdo img {
+    height: 380px;
+}
+
+section.dados{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+
+}
+
+div.news{
+    flex: 1;
+    margin: 5px;
+    background-color: #3600f7d8;
+    text-align: center;
+}
+
+div.news img{
+  width: 100%;
+  height: 250px;
+  
+
+}
+
+div.news p{
+    color: #f3f1fad8;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2;
+    margin-top: 5px;
+}
+
+div.news a{
+   text-decoration: none;
+   
+}
+
+div.news a:hover p{
+    text-decoration:underline;
+    color: rgb(250, 84, 7);
+ }
+
+ footer{
+  border: solid #3600f7d8;
+  height: 80px;
+  width:100%;
+  text-align: center;
+
+}
+
+header{
+    width: 1500px;
+    border: solid transparent;
+    height: 100%;
+}
+
+
+@media (max-width:600px){
+    body{
+        width: 100vw;
+        background-color: #000!important;
+        overflow-x: hidden;
+    }
+
+
+    #h0{
+        margin-top: 55px;
+    
+    }
+    
+    
+    footer{
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+    
+    }
+
+    header{
+        height: auto;
+        width: 100%;
+        border: solid transparent;
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    
+    div.esquerdo{
+    flex:40%;
+    max-width: 120px;
+    
+    }
+    
+    div.direito{
+    flex:60%;
+    display: flex;
+    align-items: center;
+    }
+    
+    
+    div.esquerdo,div.direito{
+        margin:0px
+    }
+    
+    nav {
+            flex-direction: column;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            /*display: none;*/
+        }
+
+
+
+    
+    .menu {
+        float: left;
+
+
+    }
+    
+    nav a, nav button{
+        
+        font-family:"IBM Plex Sans Arabic', sans-serif";
+        text-decoration: none;
+        color: rgb(81, 8, 250);
+        font-size: 3vh;
+        font-weight: bold;
+        padding: 5px 10px;
+        text-shadow:rgb(23, 1, 121) 5px 5px 5px;
+        transition: all 0.5s;
+        height: auto;
+      
+    }
+    
+    nav button{
+        background-color: transparent;
+    
+    }
+    
+    nav a:hover, nav button:hover{
+        background-color: #110d1dd8;
+        opacity: 2.0;
+    }
+    
+
+    nav div.menu button:hover {
+        color: #fff;
+    }
+    
+    
+    
+    footer,section{ 
+        width: 100%;
+    
+    }
+    
+    div.direito h1{
+        font-family: 'Roboto', sans-serif;
+        font-size:4vw;
+        color: #7b08ff;
+        text-shadow:rgb(53, 1, 121) 5px 5px 5px;
+        
+    
+    }
+
+    
+    div.submenu a{
+        font-family:"IBM Plex Sans Arabic', sans-serif";
+        text-decoration: none;
+        color: #7b08ff;
+        font-size: 1.0em;
+        font-weight: bold;
+        padding: 4px 10 px;
+        
+    }
+    
+    img {
+        height: 100%;
+        width: auto;
+    }
+    
+    section.dados{
+        display: flex;
+        flex-direction: row;
+        padding-top: 10px;
+    
+    }
+    
+    div.news{
+        flex: 1;
+        margin: 5px;
+        background-color: #3600f7d8;
+        text-align: center;
+    }
+    
+    
+    div.news p{
+        color: #f3f1fad8;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2;
+        margin-top: 5px;
+    }
+    
+    div.news a{
+       text-decoration: none;
+       
+    }
+    
+    div.news a:hover p{
+        text-decoration:underline;
+        color: rgb(250, 84, 7);
+     }
+    
+     footer{
+      border: solid #3600f7d8;
+      height: 80px;
+      width:100%;
+      text-align: center;
+    
+    }
+    
+     div.direito img{
+        height: 80%;
+        width: 40vh;
+    }
+
+    div.esquerdo img{
+        height: 100%;
+        width: auto;
+    }
+    
+        header img{
+        height: auto;
+        width: 100%;
+    }
+
+
+
+
+}    
+
+
+/*
+font-family: "IBM Plex Sans Arabic";
+font-family: "Poppins";
+font-family: "Roboto";
+font-family: "Rubik Wet Paint";
+*/
